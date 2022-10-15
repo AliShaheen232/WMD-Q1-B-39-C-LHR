@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 45</title>
+  </head>
+
+  <body></body>
+</html>
+
+<script>
+  class Car {
+    constructor(
+      manufacturer,
+      modelName,
+      color = "No Color Found",
+      optionalFeature = "No Optional Feature Found"
+    ) {
+      this.manufacturer = manufacturer;
+      this.modelName = modelName;
+      this.color = color;
+      this.optionalFeature = optionalFeature;
+
+      this.show = () => {
+        return `Manufacturer : ${this.manufacturer} , Model Name : ${this.modelName} , Color : ${this.color} , Optional Feature : ${this.optionalFeature} ,`;
+      };
+    }
+  }
+
+  const car = new Car("John Wick", "Corolla", "Black");
+  console.log(car.show());
+</script>
